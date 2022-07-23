@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>Constellation memoriser</title>
+  <!-- <link rel="icon" href="logo-16.png"> -->
+  <meta name="description" content = "A website to help you memorise the position of constellations">
+  <meta property="og:type" content="website" />
+  <script src="data.js"></script>
+  <script src="quiz.js" defer></script>
+  <style>
+    html {
+      padding: 1rem;
+    }
+
+    #hint-container {
+      display: none;
+    }
+
+    #about {
+      display: block;
+      text-align: center;
+    }
+
+    #hint-button-container {
+      text-align: center;
+    }
+  </style>
+  <h1 class="jumbotron" id="question"></h1>
+  <div class="row pt-3">
+    <div class="col">
+      <button type="button" class="btn btn-outline-dark btn-block btn-lg option"></button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-outline-dark btn-block btn-lg option"></button>
+    </div>
+  </div>
+  <div class="row pt-3">
+    <div class="col">
+      <button type="button" class="btn btn-outline-dark btn-block btn-lg option"></button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-outline-dark btn-block btn-lg option"></button>
+    </div>
+  </div>
+  <h3 id="response"></h3>
+  <div id="hint-button-container">
+    <button type="button" class="btn btn-primary btn-lg" id="show-hint">Check star map</button>
+  </div>
+  <div id="hint-container">
+    <h6>Northern constellations, clockwise=eastwards</h6>
+    <img src="north.png" class="img-fluid hint" id="north">
+    <h6>Southern constellations, clockwise=westwards</h6>
+    <img src="south.png" class="img-fluid mt3 hint" id="south">
+  </div>
+  <div id="about-container"><a id="about" target="_blank" href="about.html">About</a></div>
+</html>
